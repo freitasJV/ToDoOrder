@@ -36,7 +36,7 @@ namespace ToDoOrder
                 int qtde = int.Parse(Console.ReadLine());
 
                 Product product = new Product(nameProduct, price);
-                OrderItem item = new OrderItem(qtde, product);
+                OrderItem item = new OrderItem(qtde, price, product);
 
                 order.AddItem(item);
             }

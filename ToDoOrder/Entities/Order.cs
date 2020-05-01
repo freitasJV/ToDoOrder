@@ -53,8 +53,9 @@ namespace ToDoOrder.Entities
             sb.AppendLine($"Order moment: {Moment:dd/MM/yyyy HH:mm:ss}");
             sb.AppendLine($"Order status: {Status}");
             sb.AppendLine($"Client: {Client}");
+            sb.AppendLine("Order Items:");
 
-            foreach(OrderItem i in Items)
+            foreach (OrderItem i in Items)
             {
                 sb.AppendLine(i.ToString());
             }

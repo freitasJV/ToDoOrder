@@ -13,17 +13,11 @@ namespace ToDoOrder.Entities
         {
         }
 
-        public OrderItem(int quantity, double price)
+        public OrderItem(int quantity, double price, Product product)
         {
             Quantity = quantity;
             Price = price;
-        }
-
-        public OrderItem(int quantity, Product product)
-        {
-            Quantity = quantity;
             Product = product;
-            Price = product.Price;
         }
 
         public double SubTotal()
